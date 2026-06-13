@@ -1,0 +1,161 @@
+/* VARIABLES PARA LOS COLORES */
+:root{
+    --dorado:#cdb08b;
+    --dorado-hover:#b89672;
+    --negro:#181818;
+    --gris:#666;
+    --blanco:#ffffff;
+    --fondo:#faf8f5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:var(--fondo);
+    color:var(--negro);
+    overflow-x:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:
+    rgba(255,255,255,.95);
+    backdrop-filter:blur(15px);
+    box-shadow:
+    0 4px 20px rgba(0,0,0,.05);
+    z-index:999;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo img{
+    height:80px;
+}
+
+/* MENÚ */
+.menu{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 500;
+    transition: .3s ease;
+    padding-bottom: 8px;
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--dorado);
+    transform: translateX(-50%);
+    transition: width .3s ease;
+}
+
+.menu a:hover{
+    color: var(--dorado);
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+/* BOTON HAMBURGUESA */
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:28px;
+    cursor:pointer;
+    color:var(--negro);
+}
+
+.header{
+    transition:.35s ease;
+}
+
+.header.scrolled{
+    background:rgba(255,255,255,.98);
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+}
+
+.header.scrolled .logo img{
+    height:65px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+        z-index:1001;
+    }
+
+    .menu{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:280px;
+        height:100vh;
+
+        background:white;
+
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        gap:35px;
+
+        transition:.4s ease;
+
+        box-shadow:
+        -10px 0 30px rgba(0,0,0,.08);
+
+        z-index:1000;
+    }
+
+    .menu.active{
+        right:0;
+    }
+
+    .menu a{
+        font-size:1.1rem;
+    }
+
+}
+

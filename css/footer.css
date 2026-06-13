@@ -1,0 +1,19 @@
+/* FOOTER */
+.footer{
+    background:#fff;
+    padding:40px 0;
+    border-top:1px solid #eee;
+}
+
+.footer-copy{
+    text-align:center;
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid #eee;
+    color:var(--gris);
+    font-size:.9rem;
+}
+
+.footer p{
+    text-align: center;
+}

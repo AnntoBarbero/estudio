@@ -1,0 +1,48 @@
+/* CAPACITACIONES */
+.capacitaciones{
+    padding:120px 0;
+    background:#faf8f5;
+}
+
+.capacitaciones-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.capacitacion-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.06);
+    transition:.35s ease;
+}
+
+.capacitacion-card:hover{
+    transform:translateY(-8px);
+}
+
+.capacitacion-card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.btn-capacitacion{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 30px;
+    background:var(--dorado);
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn-capacitacion:hover{
+    background:var(--dorado-hover);
+}
+

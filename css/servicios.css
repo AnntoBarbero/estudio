@@ -1,0 +1,113 @@
+.servicios{
+    padding:120px 0;
+    background:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* TITULOS DE SECCIONES */
+.titulo-seccion{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.titulo-seccion span{
+    color:var(--dorado);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:.9rem;
+}
+
+.titulo-seccion h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3.5rem;
+    margin:15px 0;
+}
+
+.titulo-seccion p{
+    max-width:700px;
+    margin:auto;
+    color:var(--gris);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 25px;
+    align-items: start;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* HEADER (clickable) */
+.card-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+}
+
+.card-header h3 {
+    margin: 0;
+    color: var(--dorado-hover);
+    font-size: 1.1rem;
+}
+
+.card-header .icon {
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+    color: var(--dorado-hover);
+}
+
+/* BODY (animación suave) */
+.card-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    padding: 0 20px;
+}
+
+.card-body p {
+    margin-top: 10px;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+.card-body ul {
+    margin: 10px 0 20px;
+    padding-left: 18px;
+}
+
+.card-body li {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+/* estado abierto */
+.card.active .card-body {
+    max-height: 500px;
+    padding-bottom: 20px;
+}
+
+.card.active .icon {
+    transform: rotate(45deg);
+}
