@@ -67,3 +67,30 @@ window.addEventListener("scroll", () => {
     }
 
 });
+
+// Bloquear clic derecho
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+
+// No permitir arrastrar imágenes
+document.querySelectorAll("img").forEach(img => {
+    img.setAttribute("draggable", "false");
+});
+
+// Desactivar atajos
+document.addEventListener("keydown", function(e){
+
+    if(e.key==="F12"){
+        e.preventDefault();
+    }
+
+    if(e.ctrlKey && e.shiftKey && ["I","J","C"].includes(e.key.toUpperCase())){
+        e.preventDefault();
+    }
+
+    if(e.ctrlKey && e.key.toUpperCase()=="U"){
+        e.preventDefault();
+    }
+
+});
