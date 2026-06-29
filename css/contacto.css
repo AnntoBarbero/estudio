@@ -90,3 +90,21 @@
 .email-link:hover{
     color:var(--dorado);
 }
+
+/* UBICACION */
+.ubicacion-card{
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+}
+
+.ubicacion-card h3,
+.ubicacion-card p,
+.ubicacion-card small{
+    color:inherit;
+}
+
+.ubicacion-card small{
+    color:var(--dorado);
+    font-weight:600;
+}
