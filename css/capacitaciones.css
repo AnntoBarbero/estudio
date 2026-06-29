@@ -46,3 +46,35 @@
     background:var(--dorado-hover);
 }
 
+.capacitacion-proximamente{
+    max-width:700px;
+    margin:0 auto;
+    background:#fff;
+    padding:50px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.capacitacion-proximamente i{
+    font-size:60px;
+    color:var(--dorado);
+    margin-bottom:20px;
+}
+
+.capacitacion-proximamente h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.capacitacion-proximamente p{
+    line-height:1.8;
+    color:var(--gris);
+    margin-bottom:15px;
+}
+
+.texto-aviso{
+    font-weight:600;
+    color:var(--negro);
+}
