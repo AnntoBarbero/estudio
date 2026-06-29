@@ -1,6 +1,4 @@
-/* ==========================
-   TABLETS
-========================== */
+/* TABLETS */
 @media (max-width:992px){
 
     .hero-content{
@@ -128,10 +126,6 @@
         padding:30px 20px;
     }
 
-    .valor{
-        width:100%;
-    }
-
     .sobre-grid{
     grid-template-columns:1fr;
     gap:40px;
@@ -159,6 +153,18 @@
         left:auto;
         right:auto;
         bottom:auto;
+    }
+
+    .capacitacion-proximamente{
+    padding:35px 25px;
+    }
+
+    .capacitacion-proximamente h3{
+        font-size:2rem;
+    }
+
+    .capacitacion-proximamente i{
+        font-size:50px;
     }
 
 }
@@ -204,4 +210,19 @@
         bottom:90px;
     }
 
+    .capacitacion-proximamente{
+    padding:30px 20px;
+    }
+
+    .capacitacion-proximamente h3{
+        font-size:1.8rem;
+    }
+
+    .capacitacion-proximamente p{
+        font-size:.95rem;
+    }
+
+    .capacitacion-proximamente i{
+        font-size:42px;
+    }
 }
